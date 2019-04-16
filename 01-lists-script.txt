@@ -1,0 +1,34 @@
+#! /usr/bin/python3
+
+#square brackets made a list
+#single quotes make strings, could also be double
+#cisco is in position 0
+#ribbon is in position 3 (... or -1 huh?)
+vendorlist = ['cisco', 'juniper', 'rhel', 'ribbon']
+
+#display the entire list
+print(vendorlist)
+
+#display juniper
+print(vendorlist[1])
+
+#add something to our list
+vendorlist.append('maviner')
+vendorlist.append("ashuba.network")
+print(vendorlist)
+
+#remove last value on my list
+vendorlist.pop()
+print(vendorlist)
+
+#read in some data from a flat text file
+vendorfile = open('01-lists.txt', 'r')
+vendorlist.append('netscout')
+print(vendorlist)
+
+#Loop through the data
+print("Loop through our data")
+for vendor in vendorlist:
+    print(vendor.rstrip('\n'))
+
+input ('Press any key to exit')

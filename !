@@ -1,0 +1,11 @@
+#!/usr/bin/python3
+
+user_input = input("please enter an ipv4 ip address:")
+
+print("you told me the ipv4 adress is:" + user_input)
+
+vendor_input = input("please enter the vendor:")
+
+print("you told me the vendor is:" + vendor_input, "for ip:" + user_input)
+
+input("press enter to exit")
